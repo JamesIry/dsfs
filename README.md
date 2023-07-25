@@ -1,0 +1,1 @@
+Exercises from [Data Science From Scratch, 2nd ed.](https://www.oreilly.com/library/view/data-science-from/9781492041122/) by Joel Grus. This is just a playground.
