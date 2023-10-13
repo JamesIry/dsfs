@@ -58,11 +58,12 @@ def de_mean(xs: Vector) -> Vector:
 
 
 def variance(xs: Vector) -> float:
-    assert len(xs) >= 2, "variance requires at least 2 elements"
-
     length = len(xs)
-    deviations = de_mean(xs)
-    return vector.sum_of_squares(deviations) / (length - 1)
+    if length < 2:
+        return 0
+    else:
+        deviations = de_mean(xs)
+        return vector.sum_of_squares(deviations) / (length - 1)
 
 
 assert 81.54 < variance(test_data.num_friends) < 81.55

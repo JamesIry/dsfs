@@ -53,7 +53,6 @@ assert vector_mean([[1, 2], [3, 4], (5, 6)]) == [3, 4]
 
 def dot(v: Vector, w: Vector) -> float:
     assert len(v) == len(w), "vectors must be the same size"
-
     return sum([x * y for x, y in zip(v, w)])
 
 
